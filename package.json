@@ -1,11 +1,11 @@
 {
   "name": "ngnono-functionProxy",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "function wrapper",
   "homepage": "github.com/ngnono/functionProxy",
   "author": {
     "name": "lianghongpeng",
-    "email": "ngnono@126.com",
+    "email": "ngnono@gmail.com",
     "url": "github.com/ngnono"
   },
   "repository": "ngnono/function-proxy",
@@ -14,6 +14,7 @@
     "index.js"
   ],
   "keywords": [
+      "ngnono"
   ],
   "dependencies": {},
   "devDependencies": {
