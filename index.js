@@ -10,7 +10,7 @@ module.exports = function (fn) {
         fn = noon;
     }
 
-    if(!isFunction(fn)){
+    if (!isFunction(fn)) {
         throw new Error('fn is must function.')
     }
 
@@ -47,12 +47,22 @@ var noon = function () {
  * @param value func
  * @returns {boolean}
  */
-var isFunction = function(value){
+var isFunction = function (value) {
 
     return typeof value == 'function' || false;
 };
 
 
+var _consoleCallbackFn = module.exports(function (err, rst) {
+    if (err) {
+        return console.error(err)
+    } else {
+        console.log(JSON.stringify(rst));
+    }
+});
+
 exports.noon = noon;
 
 exports.isFunction = isFunction;
+
+exports.consoleCallbackFn = _consoleCallbackFn;

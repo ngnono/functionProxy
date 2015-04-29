@@ -13,9 +13,27 @@ $ npm install --save ngnono-callback
 ## Usage
 
 ```js
-var ngnono-callback = require('ngnono-callback');
+var consoleCallbackFn = cp(function (err, rst) {
+    if (err) {
+        return console.error(err)
+    } else {
+        console.log(JSON.stringify(rst));
+    }
 
-ngnono-callback('Rainbow');
+});
+
+consoleCallbackFn(new Error('is error'));
+
+//"ok"
+
+consoleCallbackFn(null, 'ok');
+
+//[Error: is error]
+
+consoleCallbackFn(null, { status: 'ok'}, 'status', 'ok');
+
+//{"status":"ok"}
+
 ```
 
 
