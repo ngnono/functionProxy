@@ -1,21 +1,19 @@
 {
-  "name": "ngnono-callback",
+  "name": "ngnono-functionProxy",
   "version": "0.0.0",
-  "description": "callback wrapper",
-  "homepage": "github.com/ngnono/ngnono-callback",
+  "description": "function wrapper",
+  "homepage": "github.com/ngnono/functionProxy",
   "author": {
     "name": "lianghongpeng",
     "email": "ngnono@126.com",
     "url": "github.com/ngnono"
   },
-  "repository": "ngnono/ngnono-callback",
+  "repository": "ngnono/function-proxy",
   "license": "MIT",
   "files": [
     "index.js"
   ],
   "keywords": [
-    "ngnono-callback",
-    "callback cb"
   ],
   "dependencies": {},
   "devDependencies": {
