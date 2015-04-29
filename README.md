@@ -6,7 +6,7 @@
 ## Install
 
 ```sh
-$ npm install --save ngnono-callback
+$ npm install --save ngnono-function-proxy
 ```
 
 
