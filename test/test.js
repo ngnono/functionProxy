@@ -131,5 +131,7 @@ describe('ngnono-callback noon test',function(){
         stdCallback.noon();
     });
 
-
+    it('callback not set params,run ok.', function () {
+        stdCallback.consoleCallbackFn(null, 'ok');
+    });
 });
