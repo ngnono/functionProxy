@@ -6,13 +6,15 @@
 ## Install
 
 ```sh
-$ npm install --save ngnono-function-proxy
+$ npm install --save ngnono-functionproxy
 ```
 
 
 ## Usage
 
 ```js
+var cp = require('ngnono-functionproxy');
+
 var consoleCallbackFn = cp(function (err, rst) {
     if (err) {
         return console.error(err)
@@ -42,9 +44,9 @@ consoleCallbackFn(null, { status: 'ok'}, 'status', 'ok');
 MIT © [lianghongpeng](github.com/ngnono)
 
 
-[npm-url]: https://npmjs.org/package/ngnono-function-proxy
-[npm-image]: https://badge.fury.io/js/ngnono-function-proxy.svg
+[npm-url]: https://npmjs.org/package/ngnono-functionproxy
+[npm-image]: https://badge.fury.io/js/ngnono-functionproxy.svg
 [travis-url]: https://travis-ci.org/ngnono/functionProxy
 [travis-image]: https://travis-ci.org/ngnono/functionProxy.svg?branch=master
-[daviddm-url]: https://david-dm.org/ngnono/ngnono-function-proxy.svg?theme=shields.io
-[daviddm-image]: https://david-dm.org/ngnono/ngnono-function-proxy
+[daviddm-url]: https://david-dm.org/ngnono/ngnono-functionproxy.svg?theme=shields.io
+[daviddm-image]: https://david-dm.org/ngnono/ngnono-functionproxy

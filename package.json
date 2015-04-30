@@ -1,5 +1,5 @@
 {
-  "name": "ngnono-functionProxy",
+  "name": "ngnono-functionproxy",
   "version": "0.0.1",
   "description": "function wrapper",
   "homepage": "github.com/ngnono/functionProxy",
@@ -8,7 +8,7 @@
     "email": "ngnono@gmail.com",
     "url": "github.com/ngnono"
   },
-  "repository": "ngnono/function-proxy",
+  "repository": "ngnono/functionproxy",
   "license": "MIT",
   "files": [
     "index.js"
