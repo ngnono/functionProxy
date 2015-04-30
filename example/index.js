@@ -14,19 +14,24 @@ var consoleCallbackFn = cp(function (err, rst) {
     if (err) {
         return console.error(err)
     } else {
-        console.log(JSON.stringify(rst));
+
+        if (arguments.length === 2) {
+            console.log(JSON.stringify(rst));
+        } else {
+            console.log(JSON.stringify(arguments));
+        }
     }
 
 });
 
 consoleCallbackFn(new Error('is error'));
+//[Error: is error]
 
-//"ok"
 
 consoleCallbackFn(null, 'ok');
+//"ok"
 
-//[Error: is error]
 
 consoleCallbackFn(null, { status: 'ok'}, 'status', 'ok');
 
-//{"status":"ok"}
+//{"0":null,"1":{"status":"ok"},"2":"status","3":"ok"}
