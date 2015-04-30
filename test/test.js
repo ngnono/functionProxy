@@ -127,11 +127,11 @@ describe('ngnono-callback test', function () {
 
 describe('ngnono-callback noon test',function(){
 
-    it('callback not set params,run ok.', function () {
+    it('noon not set params,run ok.', function () {
         stdCallback.noon();
     });
 
-    it('callback not set params,run ok.', function () {
+    it('consoleCallbackFn set params,run ok.', function () {
         stdCallback.consoleCallbackFn(null, 'ok');
     });
 });
