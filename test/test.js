@@ -119,7 +119,7 @@ describe('ngnono-callback test', function () {
 
     it('callback is not function', function () {
         assert.throws(function () {
-            stdCallback({})
+            stdCallback({});
         }, Error);
     });
 });
@@ -128,12 +128,8 @@ describe('ngnono-callback test', function () {
 describe('ngnono-callback noon test',function(){
 
     it('callback not set params,run ok.', function () {
-        assert.doesNotThrow(stdCallback.noon);
+        stdCallback.noon();
     });
 
-
-    it('callback is function test.', function () {
-        assert.doesNotThrow(stdCallback);
-    });
 
 });

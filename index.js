@@ -5,13 +5,13 @@
  * @param fn
  * @returns {Function}
  */
-module.exports = function (fn) {
+exports = module.exports = function (fn) {
     if (!fn) {
         fn = noon;
     }
 
     if (!isFunction(fn)) {
-        throw new Error('fn is must function.')
+        throw new Error('fn is must function.');
     }
 
     return function (err) {
@@ -49,13 +49,13 @@ var noon = function () {
  */
 var isFunction = function (value) {
 
-    return typeof value == 'function' || false;
+    return typeof value === 'function' || false;
 };
 
 
 var _consoleCallbackFn = module.exports(function (err, rst) {
     if (err) {
-        return console.error(err)
+        return console.error(err);
     } else {
         console.log(JSON.stringify(rst));
     }
