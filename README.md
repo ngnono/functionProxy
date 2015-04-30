@@ -53,5 +53,5 @@ MIT © [lianghongpeng](github.com/ngnono)
 [npm-image]: https://badge.fury.io/js/ngnono-functionproxy.svg
 [travis-url]: https://travis-ci.org/ngnono/functionProxy
 [travis-image]: https://travis-ci.org/ngnono/functionProxy.svg?branch=master
-[daviddm-url]: https://david-dm.org/ngnono/ngnono-functionproxy.svg?theme=shields.io
-[daviddm-image]: https://david-dm.org/ngnono/ngnono-functionproxy
+[daviddm-url]: https://david-dm.org/ngnono/functionproxy.svg?theme=shields.io
+[daviddm-image]: https://david-dm.org/ngnono/functionproxy
